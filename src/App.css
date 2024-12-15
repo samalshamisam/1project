@@ -1,12 +1,30 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 ;
   box-sizing: border-box;
   cursor: none;
 }
 
 body {
+  width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  
+}
+/* html{
+  scroll-behavior: smooth;
+} */
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+}
+.homesec4 .waves{
+  right: 384px !important;
 }
 
 .preloaderr {
@@ -15,6 +33,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #070707;
+  
 }
 
 /* cursor  */
@@ -81,9 +100,27 @@ body {
 
 
 /* bannar  */
+
+@media only screen and (max-width:992px) {
+  .bannar .bannarimgs .laptop {
+    left: 0px;
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    right: 50px !important;
+}
+.bannar .bannarimgs .waves {
+  width: 500px;
+  right: -50px;
+  position: absolute;
+}
+
+}
 .bannar {
   background-color: #070707;
   padding: 100px 0;
+  width:100%;
+  position: relative;
 }
 
 .bannar .bannartext {
@@ -120,6 +157,7 @@ body {
   margin-top: 20px;
 
 }
+
 
 .bannar .bannarimgs {
   position: relative;
@@ -173,7 +211,7 @@ body {
 .homesec2 {
   background-color: #070707;
   padding: 50px 0;
-
+position: relative;
 }
 
 .homesec2 .row {
@@ -214,7 +252,7 @@ body {
 
 /* third section  */
 .homesec3 {
-  background-color: #070707;
+  background-color: #070707;position: relative;
 }
 
 .homesec3 .sectext {
@@ -273,7 +311,7 @@ body {
   position: absolute;
   top: 10%;
   width: 50%;
-  left: 25%;
+  /* left: 25%; */
   height: 80%;
   object-fit: contain;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(19.9363deg) skew(0deg, 0deg);
@@ -323,7 +361,7 @@ body {
   background-color: #070707;
   padding: 100px;
   text-align: center;
-
+  position: relative;
 }
 
 .homesec5 h2 {
@@ -368,7 +406,7 @@ body {
   background-color: #070707;
   padding: 100px;
   text-align: center;
-
+  position: relative;
 }
 
 .homesec5 h2 {
@@ -411,7 +449,7 @@ body {
 .homesec6 {
   background-color: #070707;
   padding: 100px;
-
+  position: relative;
 }
 
 .homesec6 h3 {
@@ -673,5 +711,46 @@ footer .copyright p:nth-child(2) {
 
   .homesec6 .d-flex {
     flex-wrap: wrap;
+  }
+}
+/* @media only screen and (max-width: 767px) {
+  .imgbox .gimg {
+      
+      position: absolute;
+      top: 216px !important;
+  }
+  .imgbox .uimg {
+      
+    position: absolute;
+    top: 216px !important;
+}
+.imgbox .wimg{
+      
+  position: absolute;
+  top: 216px !important;
+}
+}
+@media only screen and (max-width: 768px) {
+  .bannar .bannarimgs .waves {
+      width: 300px;
+      margin-top: 30px;
+      right: 234px;
+  }
+}@media only screen and (max-width: 768px) {
+  .bannar .bannarimgs .laptop {
+      width: 240px;
+      top: 57px;
+      
+      left: 257px;
+  }
+}  */
+@media only screen and (max-width: 767px) {
+  .bannarimgs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .bannarimgs {
+    display: none;
   }
 }
