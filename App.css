@@ -11,9 +11,9 @@ body {
     overflow-x: hidden !important;
   
 }
-html{
+/* html{
   scroll-behavior: smooth;
-}
+} */
 img{
   max-width: 100%;
   height: auto;
@@ -100,6 +100,22 @@ img{
 
 
 /* bannar  */
+
+@media only screen and (max-width:992px) {
+  .bannar .bannarimgs .laptop {
+    left: 0px;
+    position: absolute;
+    top: 50px;
+    width: 400px;
+    right: 50px !important;
+}
+.bannar .bannarimgs .waves {
+  width: 500px;
+  right: -50px;
+  position: absolute;
+}
+
+}
 .bannar {
   background-color: #070707;
   padding: 100px 0;
@@ -695,5 +711,46 @@ footer .copyright p:nth-child(2) {
 
   .homesec6 .d-flex {
     flex-wrap: wrap;
+  }
+}
+/* @media only screen and (max-width: 767px) {
+  .imgbox .gimg {
+      
+      position: absolute;
+      top: 216px !important;
+  }
+  .imgbox .uimg {
+      
+    position: absolute;
+    top: 216px !important;
+}
+.imgbox .wimg{
+      
+  position: absolute;
+  top: 216px !important;
+}
+}
+@media only screen and (max-width: 768px) {
+  .bannar .bannarimgs .waves {
+      width: 300px;
+      margin-top: 30px;
+      right: 234px;
+  }
+}@media only screen and (max-width: 768px) {
+  .bannar .bannarimgs .laptop {
+      width: 240px;
+      top: 57px;
+      
+      left: 257px;
+  }
+}  */
+@media only screen and (max-width: 767px) {
+  .bannarimgs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .bannarimgs {
+    display: none;
   }
 }
